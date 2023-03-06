@@ -4,8 +4,9 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from product.models import Product
 from product.serializers import ProductSerializer
-from rest_framework import status , generics
-from rest_framework.views import APIView
+from rest_framework import status , generics , viewsets, mixins
+from rest_framework.views import APIView 
+from product.tasks import big_function
 
 
 @api_view(['GET'])
@@ -52,7 +53,7 @@ class ProductAPIView(APIView):
         products = Product.objects.all()
         serializer = ProductSerializer(products, many=True)
         return Response(serializer.data)
-        return Response('GEEEEEEEEEEEEEEEEEEEEEEEEET')
+        
 
 
     def post(self,request):
@@ -63,3 +64,36 @@ class ProductAPIView(APIView):
 
 #VIEWSET , MODELWUWSET , MIXINS
 
+class ProductViewSet(viewsets.ViewSet):
+    def list(self, request): #get 
+        product = Product.objects.all()
+        serializer = ProductSerializer(product, many=True)
+        return Response(serializer.data)
+    
+    def create(self, request):
+        serializer = ProductSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save(owner=request.user)
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+    
+class ProductModelviewSet(viewsets.ModelViewSet):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+
+
+class productMixin(mixins.CreateModelMixin,
+                   mixins.RetrieveModelMixin,
+                   mixins.ListModelMixin,
+                   viewsets.GenericViewSet):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+
+@api_view(['GET'])
+def get_hello(request):
+    big_function.delay()
+    return Response('HELLOOOOOOOOO!!!!!!!!!!!')
+
+
+
+
+# HOW DO 

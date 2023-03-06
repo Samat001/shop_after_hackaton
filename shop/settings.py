@@ -13,6 +13,8 @@ import dj_database_url
 from pathlib import Path
 from decouple import config
 from datetime import timedelta
+# import logging
+# logging.info()
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -40,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders', # 4-ый добавить в инсталед аппс и 1-ый установка 
 #
     'rest_framework',
     'rest_framework_simplejwt',
@@ -55,11 +58,15 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+
+    'corsheaders.middleware.CorsMiddleware', #можно ли этой апишке отправлять запросс 3-ий
+
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
 ]
 
 ROOT_URLCONF = 'shop.urls'
@@ -115,7 +122,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-RU'
 
 TIME_ZONE = 'UTC'
 
@@ -158,3 +165,42 @@ SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=60),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
 }
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:3000', # 2 настройка
+]
+
+
+LOGGING = {
+    'version' : 1,
+    'disable_existing_loggers':False,
+    'formatters': {
+        'console': {
+            'format':"[{module} {asctime} {levelname}]{message}",
+            'style': '{',
+        },
+    },
+
+    'handlers':{
+        'console':{
+            'class': 'logging.StreamHandler',
+            'formatter':'console',
+   
+        },
+    },
+    'loggers':{
+    'django.db.backends':{
+        'handlers': ['console'],
+        'level': 'DEBUG',
+        },
+    },
+}
+    
+
+CELERY_BROKER_URL = 'redis://localhost:6379'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379'
+        
+   
+
+
+    
+
