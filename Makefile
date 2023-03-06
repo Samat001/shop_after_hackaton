@@ -7,3 +7,7 @@ migrate:
 
 celery:
 	celery -A shop worker -l debug
+
+
+beat:
+	celery -A shop beat
