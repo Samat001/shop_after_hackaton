@@ -1,0 +1,8 @@
+{"time": "2023-03-06 11:12:49,696", "level": "INFO", "message": "Watching for file changes with StatReloader"}
+{"time": "2023-03-06 11:12:56,852", "level": "INFO", "message": ""GET /api/v1/spam/contact/ HTTP/1.1" 200 43"}
+{"time": "2023-03-06 11:12:58,513", "level": "INFO", "message": ""GET /api/v1/spam/contact/ HTTP/1.1" 200 43"}
+{"time": "2023-03-06 11:13:01,694", "level": "WARNING", "message": ""POST /api/v1/spam/contact/ HTTP/1.1" 400 35"}
+{"time": "2023-03-06 11:13:07,675", "level": "WARNING", "message": ""POST /api/v1/spam/contact/1. HTTP/1.1" 404 4146"}
+{"time": "2023-03-06 11:13:11,535", "level": "WARNING", "message": ""POST /api/v1/spam/contact/1/ HTTP/1.1" 405 55"}
+{"time": "2023-03-06 11:13:15,275", "level": "WARNING", "message": ""GET /api/v1/spam/contact/1/ HTTP/1.1" 405 54"}
+{"time": "2023-03-06 11:13:20,361", "level": "INFO", "message": ""GET /api/v1/spam/contact/ HTTP/1.1" 200 43"}
