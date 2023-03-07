@@ -182,10 +182,10 @@ LOGGING = {
         },
     },
     'handlers': {
-        'console': {
-            'class': 'logging.StreamHandler',
-            'formatter': 'json',
-        },
+        # 'console': {
+        #     'class': 'logging.StreamHandler',
+        #     'formatter': 'json',
+        # },
         'file': {
             'class': 'logging.handlers.RotatingFileHandler',
             'filename': 'logging.json',
@@ -196,15 +196,15 @@ LOGGING = {
     },
     'loggers': {
         'django': {
-            'handlers': ['console', 'file'],
+            'handlers': ['file'],
             'level': 'INFO',
         },
         'django.request': {
-            'handlers': ['console', 'file'],
+            'handlers': ['file'],
             'level': 'ERROR',
         },
         'myapp': {
-            'handlers': ['console', 'file'],
+            'handlers': ['file'],
             'level': 'DEBUG',
             'propagate': False,
         },

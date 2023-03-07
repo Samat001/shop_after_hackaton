@@ -6,3 +6,12 @@
 {"time": "2023-03-06 11:13:11,535", "level": "WARNING", "message": ""POST /api/v1/spam/contact/1/ HTTP/1.1" 405 55"}
 {"time": "2023-03-06 11:13:15,275", "level": "WARNING", "message": ""GET /api/v1/spam/contact/1/ HTTP/1.1" 405 54"}
 {"time": "2023-03-06 11:13:20,361", "level": "INFO", "message": ""GET /api/v1/spam/contact/ HTTP/1.1" 200 43"}
+{"time": "2023-03-06 11:17:54,684", "level": "INFO", "message": "Watching for file changes with StatReloader"}
+{"time": "2023-03-06 11:18:15,511", "level": "INFO", "message": "/home/samat/Desktop/py25/django/week2/project_after_hakaton/shop/settings.py changed, reloading."}
+{"time": "2023-03-06 11:18:16,752", "level": "INFO", "message": "Watching for file changes with StatReloader"}
+{"time": "2023-03-06 11:22:27,953", "level": "INFO", "message": "/home/samat/Desktop/py25/django/week2/project_after_hakaton/shop/settings.py changed, reloading."}
+{"time": "2023-03-06 11:22:57,937", "level": "INFO", "message": "Watching for file changes with StatReloader"}
+{"time": "2023-03-06 11:23:02,808", "level": "INFO", "message": ""GET /api/v1/spam/contact/ HTTP/1.1" 200 43"}
+{"time": "2023-03-06 11:23:03,944", "level": "INFO", "message": ""GET /api/v1/spam/contact/ HTTP/1.1" 200 43"}
+{"time": "2023-03-06 11:23:31,569", "level": "INFO", "message": "/home/samat/Desktop/py25/django/week2/project_after_hakaton/shop/settings.py changed, reloading."}
+{"time": "2023-03-06 12:48:57,671", "level": "INFO", "message": "Watching for file changes with StatReloader"}
