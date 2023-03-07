@@ -15,3 +15,56 @@
 {"time": "2023-03-06 11:23:03,944", "level": "INFO", "message": ""GET /api/v1/spam/contact/ HTTP/1.1" 200 43"}
 {"time": "2023-03-06 11:23:31,569", "level": "INFO", "message": "/home/samat/Desktop/py25/django/week2/project_after_hakaton/shop/settings.py changed, reloading."}
 {"time": "2023-03-06 12:48:57,671", "level": "INFO", "message": "Watching for file changes with StatReloader"}
+{"time": "2023-03-07 04:18:39,486", "level": "INFO", "message": "Watching for file changes with StatReloader"}
+{"time": "2023-03-07 04:18:42,904", "level": "INFO", "message": ""GET /admin/account/customuser/ HTTP/1.1" 302 0"}
+{"time": "2023-03-07 04:18:42,983", "level": "INFO", "message": ""GET /admin/login/?next=/admin/account/customuser/ HTTP/1.1" 200 2316"}
+{"time": "2023-03-07 04:18:43,184", "level": "INFO", "message": ""GET /static/admin/css/base.css HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:18:43,227", "level": "INFO", "message": ""GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:18:43,230", "level": "INFO", "message": ""GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:18:43,235", "level": "INFO", "message": ""GET /static/admin/css/login.css HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:18:43,235", "level": "INFO", "message": ""GET /static/admin/css/responsive.css HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:18:43,246", "level": "INFO", "message": ""GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:18:43,246", "level": "INFO", "message": ""GET /static/admin/css/fonts.css HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:18:43,375", "level": "INFO", "message": ""GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:18:43,378", "level": "INFO", "message": ""GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:18:45,714", "level": "INFO", "message": ""POST /admin/login/?next=/admin/account/customuser/ HTTP/1.1" 200 2567"}
+{"time": "2023-03-07 04:18:45,893", "level": "INFO", "message": ""GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:18:50,450", "level": "INFO", "message": ""POST /admin/login/?next=/admin/account/customuser/ HTTP/1.1" 302 0"}
+{"time": "2023-03-07 04:18:50,567", "level": "INFO", "message": ""GET /admin/account/customuser/ HTTP/1.1" 200 9039"}
+{"time": "2023-03-07 04:18:50,709", "level": "INFO", "message": ""GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:18:50,718", "level": "INFO", "message": ""GET /static/admin/js/actions.js HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:18:50,722", "level": "INFO", "message": ""GET /static/admin/js/core.js HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:18:50,724", "level": "INFO", "message": ""GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:18:50,725", "level": "INFO", "message": ""GET /static/admin/css/changelists.css HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:18:50,728", "level": "INFO", "message": ""GET /static/admin/js/urlify.js HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:18:50,737", "level": "INFO", "message": ""GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:18:50,742", "level": "INFO", "message": ""GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:18:50,752", "level": "INFO", "message": ""GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580"}
+{"time": "2023-03-07 04:18:50,753", "level": "INFO", "message": ""GET /admin/jsi18n/ HTTP/1.1" 200 16066"}
+{"time": "2023-03-07 04:18:50,848", "level": "INFO", "message": ""GET /static/admin/js/filters.js HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:18:50,898", "level": "INFO", "message": ""GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:18:50,900", "level": "INFO", "message": ""GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:18:59,588", "level": "INFO", "message": ""GET /admin/spam/contact/ HTTP/1.1" 200 8678"}
+{"time": "2023-03-07 04:18:59,714", "level": "INFO", "message": ""GET /admin/jsi18n/ HTTP/1.1" 200 16066"}
+{"time": "2023-03-07 04:19:03,719", "level": "INFO", "message": ""GET /admin/spam/contact/add/ HTTP/1.1" 200 8116"}
+{"time": "2023-03-07 04:19:03,823", "level": "INFO", "message": ""GET /static/admin/css/forms.css HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:19:03,851", "level": "INFO", "message": ""GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:19:03,854", "level": "INFO", "message": ""GET /static/admin/css/widgets.css HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:19:03,876", "level": "INFO", "message": ""GET /admin/jsi18n/ HTTP/1.1" 200 16066"}
+{"time": "2023-03-07 04:19:03,887", "level": "INFO", "message": ""GET /static/admin/js/change_form.js HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:19:07,384", "level": "INFO", "message": ""GET /admin/spam/contact/ HTTP/1.1" 200 8678"}
+{"time": "2023-03-07 04:19:10,637", "level": "INFO", "message": ""GET /admin/account/customuser/ HTTP/1.1" 200 9039"}
+{"time": "2023-03-07 04:19:10,770", "level": "INFO", "message": ""GET /admin/jsi18n/ HTTP/1.1" 200 16066"}
+{"time": "2023-03-07 04:19:18,189", "level": "INFO", "message": ""GET /admin/spam/contact/ HTTP/1.1" 200 8678"}
+{"time": "2023-03-07 04:19:18,314", "level": "INFO", "message": ""GET /admin/jsi18n/ HTTP/1.1" 200 16066"}
+{"time": "2023-03-07 04:19:19,847", "level": "INFO", "message": ""GET /admin/spam/contact/add/ HTTP/1.1" 200 8116"}
+{"time": "2023-03-07 04:19:19,971", "level": "INFO", "message": ""GET /admin/jsi18n/ HTTP/1.1" 200 16066"}
+{"time": "2023-03-07 04:19:21,595", "level": "INFO", "message": ""POST /admin/spam/contact/add/ HTTP/1.1" 302 0"}
+{"time": "2023-03-07 04:19:21,676", "level": "INFO", "message": ""GET /admin/spam/contact/ HTTP/1.1" 200 9100"}
+{"time": "2023-03-07 04:19:21,907", "level": "INFO", "message": ""GET /admin/jsi18n/ HTTP/1.1" 200 16066"}
+{"time": "2023-03-07 04:19:22,001", "level": "INFO", "message": ""GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0"}
+{"time": "2023-03-07 04:40:34,206", "level": "INFO", "message": "Watching for file changes with StatReloader"}
+{"time": "2023-03-07 04:41:05,514", "level": "INFO", "message": ""GET /api/v1/product/category/ HTTP/1.1" 200 68"}
+{"time": "2023-03-07 04:41:25,316", "level": "INFO", "message": ""POST /api/v1/account/login/ HTTP/1.1" 200 486"}
+{"time": "2023-03-07 04:41:47,951", "level": "INFO", "message": ""GET /api/v1/product/category/ HTTP/1.1" 200 68"}
+{"time": "2023-03-07 05:19:47,639", "level": "INFO", "message": "Watching for file changes with StatReloader"}
