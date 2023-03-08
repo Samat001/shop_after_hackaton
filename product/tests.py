@@ -66,8 +66,7 @@ class ProductTest(APITestCase):
         view = TokenObtainPairView.as_view()
         response = view(request)
         return response.data['access']
-        print(response.status_code)
-        print(response.data)
+        
 
     @staticmethod
     def setup_category():

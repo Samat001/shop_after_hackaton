@@ -1,7 +1,7 @@
 from order.models import Order
 from order.serializers import OrderSerializer
 from rest_framework.viewsets import ModelViewSet
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticatedOrReadOnly, AllowAny
 from rest_framework.views import APIView
 from rest_framework.generics import get_object_or_404
 from rest_framework.response import Response
@@ -10,7 +10,7 @@ from rest_framework import status
 class OrderModelViewSet(ModelViewSet):
     queryset = Order.objects.all()
     serializer_class = OrderSerializer
-    permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
 
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)

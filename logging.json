@@ -68,3 +68,139 @@
 {"time": "2023-03-07 04:41:25,316", "level": "INFO", "message": ""POST /api/v1/account/login/ HTTP/1.1" 200 486"}
 {"time": "2023-03-07 04:41:47,951", "level": "INFO", "message": ""GET /api/v1/product/category/ HTTP/1.1" 200 68"}
 {"time": "2023-03-07 05:19:47,639", "level": "INFO", "message": "Watching for file changes with StatReloader"}
+{"time": "2023-03-07 07:27:46,462", "level": "INFO", "message": "Watching for file changes with StatReloader"}
+{"time": "2023-03-07 07:27:50,828", "level": "WARNING", "message": ""GET /api/v1/order/orders/8/ HTTP/1.1" 404 4297"}
+{"time": "2023-03-07 07:28:23,577", "level": "INFO", "message": ""GET /api/v1/order/orders HTTP/1.1" 301 0"}
+{"time": "2023-03-07 07:28:23,596", "level": "WARNING", "message": ""GET /api/v1/order/orders/ HTTP/1.1" 401 275"}
+{"time": "2023-03-07 07:28:27,563", "level": "WARNING", "message": ""GET /api/v1/order/orders/ HTTP/1.1" 401 275"}
+{"time": "2023-03-07 07:28:42,863", "level": "INFO", "message": ""POST /api/v1/account/login/ HTTP/1.1" 200 486"}
+{"time": "2023-03-07 07:28:57,695", "level": "WARNING", "message": ""GET /api/v1/order/orders/ HTTP/1.1" 404 50"}
+{"time": "2023-03-07 07:29:05,988", "level": "WARNING", "message": ""GET /api/v1/order/order/ HTTP/1.1" 404 50"}
+{"time": "2023-03-07 07:29:09,895", "level": "INFO", "message": ""GET /api/v1/order/ HTTP/1.1" 200 2"}
+{"time": "2023-03-07 07:33:50,404", "level": "INFO", "message": "Watching for file changes with StatReloader"}
+{"time": "2023-03-07 07:33:57,848", "level": "WARNING", "message": ""GET /api/v1/order/ HTTP/1.1" 401 82"}
+{"time": "2023-03-07 07:34:07,491", "level": "INFO", "message": ""GET /api/v1/order/ HTTP/1.1" 200 2"}
+{"time": "2023-03-07 08:08:41,440", "level": "INFO", "message": "Watching for file changes with StatReloader"}
+{"time": "2023-03-07 08:08:48,673", "level": "INFO", "message": ""GET /api/v1/order/ HTTP/1.1" 200 2"}
+{"time": "2023-03-07 08:32:06,746", "level": "INFO", "message": "Watching for file changes with StatReloader"}
+{"time": "2023-03-07 08:32:54,394", "level": "INFO", "message": ""POST /api/v1/account/login/ HTTP/1.1" 200 486"}
+{"time": "2023-03-07 08:33:08,258", "level": "WARNING", "message": ""POST /api/v1/account/logout/ HTTP/1.1" 404 3728"}
+{"time": "2023-03-07 08:33:27,104", "level": "INFO", "message": ""POST /api/v1/account/login/ HTTP/1.1" 200 486"}
+{"time": "2023-03-07 08:39:17,247", "level": "INFO", "message": "Watching for file changes with StatReloader"}
+{"time": "2023-03-07 08:39:20,470", "level": "INFO", "message": ""POST /api/v1/account/login/ HTTP/1.1" 200 486"}
+{"time": "2023-03-07 08:39:40,894", "level": "INFO", "message": ""GET /api/v1/order/ HTTP/1.1" 200 2"}
+{"time": "2023-03-07 08:42:56,455", "level": "ERROR", "message": "Internal Server Error: /api/v1/order/"}
+Traceback (most recent call last):
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2018, in get_prep_value
+    return int(value)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/contrib/auth/models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/order/views.py", line 20, in get_queryset
+    queryset = queryset.filter(owner=self.request.user)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1421, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1439, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1446, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1478, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1303, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/db/models/fields/related_lookups.py", line 166, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2020, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7f56767ddc30>.
+{"time": "2023-03-07 08:42:56,455", "level": "ERROR", "message": "Internal Server Error: /api/v1/order/"}
+Traceback (most recent call last):
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2018, in get_prep_value
+    return int(value)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/contrib/auth/models.py", line 437, in __int__
+    raise TypeError(
+TypeError: Cannot cast AnonymousUser to int. Are you trying to use it in place of User?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/order/views.py", line 20, in get_queryset
+    queryset = queryset.filter(owner=self.request.user)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1421, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1439, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1446, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1478, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1303, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/db/models/fields/related_lookups.py", line 166, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "/home/samat/Desktop/py25/django/week2/project_after_hakaton/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2020, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x7f56767ddc30>.
+{"time": "2023-03-07 08:42:56,461", "level": "ERROR", "message": ""GET /api/v1/order/ HTTP/1.1" 500 159629"}
+{"time": "2023-03-07 08:43:26,931", "level": "INFO", "message": "/home/samat/Desktop/py25/django/week2/project_after_hakaton/order/views.py changed, reloading."}
+{"time": "2023-03-07 08:43:28,246", "level": "INFO", "message": "Watching for file changes with StatReloader"}
+{"time": "2023-03-07 08:43:31,677", "level": "INFO", "message": "/home/samat/Desktop/py25/django/week2/project_after_hakaton/order/views.py changed, reloading."}
+{"time": "2023-03-07 08:43:32,899", "level": "INFO", "message": "Watching for file changes with StatReloader"}
+{"time": "2023-03-07 08:43:37,431", "level": "INFO", "message": "/home/samat/Desktop/py25/django/week2/project_after_hakaton/order/views.py changed, reloading."}
+{"time": "2023-03-07 08:43:38,723", "level": "INFO", "message": "Watching for file changes with StatReloader"}
+{"time": "2023-03-07 08:43:40,453", "level": "INFO", "message": ""GET /api/v1/order/ HTTP/1.1" 200 2"}
+{"time": "2023-03-08 04:05:20,803", "level": "INFO", "message": "Watching for file changes with StatReloader"}
+{"time": "2023-03-08 04:05:42,190", "level": "INFO", "message": "Watching for file changes with StatReloader"}
+{"time": "2023-03-08 04:06:22,870", "level": "INFO", "message": "Watching for file changes with StatReloader"}
