@@ -1,5 +1,9 @@
 from django.db import models
 from django.contrib.auth import get_user_model
+from django .db.models.signals import post_save
+from django.dispatch import receiver 
+from product.tasks import send_product_news
+
 User = get_user_model()
 
 class Category(models.Model):
@@ -20,3 +24,8 @@ class Product(models.Model):
 
     def __str__(self) -> str:
         return f'{self.title}'
+    
+@receiver(post_save , sender=Product)
+def post_product(sender , instance , created , **kwargs):
+    if created:
+        send_product_news.delay(instance.title, instance.price)
