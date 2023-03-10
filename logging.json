@@ -204,3 +204,9 @@ TypeError: Field 'id' expected a number but got <django.contrib.auth.models.Anon
 {"time": "2023-03-08 04:05:20,803", "level": "INFO", "message": "Watching for file changes with StatReloader"}
 {"time": "2023-03-08 04:05:42,190", "level": "INFO", "message": "Watching for file changes with StatReloader"}
 {"time": "2023-03-08 04:06:22,870", "level": "INFO", "message": "Watching for file changes with StatReloader"}
+{"time": "2023-03-10 04:42:12,889", "level": "INFO", "message": "Watching for file changes with StatReloader"}
+{"time": "2023-03-10 04:43:05,225", "level": "INFO", "message": "/home/samat/Desktop/py25/django/week2/project_after_hakaton/shop/settings.py changed, reloading."}
+{"time": "2023-03-10 04:43:17,461", "level": "INFO", "message": "Watching for file changes with StatReloader"}
+{"time": "2023-03-10 04:43:23,425", "level": "INFO", "message": "/home/samat/Desktop/py25/django/week2/project_after_hakaton/shop/settings.py changed, reloading."}
+{"time": "2023-03-10 04:43:24,776", "level": "INFO", "message": "Watching for file changes with StatReloader"}
+{"time": "2023-03-10 04:43:58,237", "level": "INFO", "message": "/home/samat/Desktop/py25/django/week2/project_after_hakaton/shop/settings.py changed, reloading."}

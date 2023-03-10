@@ -13,7 +13,7 @@ import dj_database_url
 from pathlib import Path
 from decouple import config
 from datetime import timedelta
-import logging.config
+# import logging.config
 # logging.info()
 
 
@@ -178,46 +178,46 @@ CORS_ALLOWED_ORIGINS = [
 
 
 
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'formatters': {
-        'json': {
-            'class': 'logging.Formatter',
-            'format': '{"time": "%(asctime)s", "level": "%(levelname)s", "message": "%(message)s"}',
-        },
-    },
-    'handlers': {
-        # 'console': {
-        #     'class': 'logging.StreamHandler',
-        #     'formatter': 'json',
-        # },
-        'file': {
-            'class': 'logging.handlers.RotatingFileHandler',
-            'filename': 'logging.json',
-            'maxBytes': 1024*1024*5,
-            'backupCount': 5,
-            'formatter': 'json',
-        }
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['file'],
-            'level': 'INFO',
-        },
-        'django.request': {
-            'handlers': ['file'],
-            'level': 'ERROR',
-        },
-        'myapp': {
-            'handlers': ['file'],
-            'level': 'DEBUG',
-            'propagate': False,
-        },
-    },
-}
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'formatters': {
+#         'json': {
+#             'class': 'logging.Formatter',
+#             'format': '{"time": "%(asctime)s", "level": "%(levelname)s", "message": "%(message)s"}',
+#         },
+#     },
+#     'handlers': {
+#         # 'console': {
+#         #     'class': 'logging.StreamHandler',
+#         #     'formatter': 'json',
+#         # },
+#         'file': {
+#             'class': 'logging.handlers.RotatingFileHandler',
+#             'filename': 'logging.json',
+#             'maxBytes': 1024*1024*5,
+#             'backupCount': 5,
+#             'formatter': 'json',
+#         }
+#     },
+#     'loggers': {
+#         'django': {
+#             'handlers': ['file'],
+#             'level': 'INFO',
+#         },
+#         'django.request': {
+#             'handlers': ['file'],
+#             'level': 'ERROR',
+#         },
+#         'myapp': {
+#             'handlers': ['file'],
+#             'level': 'DEBUG',
+#             'propagate': False,
+#         },
+#     },
+# }
 
-logging.config.dictConfig(LOGGING)
+# logging.config.dictConfig(LOGGING)
 
 
 
